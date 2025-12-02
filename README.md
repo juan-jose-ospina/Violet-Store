@@ -39,6 +39,13 @@
 - **Gestión de inventario** en tiempo real
 
 ---
+## DIAGRAMA RELACIONAL 
+![Imagen de WhatsApp 2025-11-30 a las 11 51 36_2946f21e](https://github.com/user-attachments/assets/21c3e9fa-0de1-47e1-8a6d-997b290cef56)
+
+---
+## DIAGRAMA DE CASOS DE USO 
+<img width="921" height="1194" alt="image" src="https://github.com/user-attachments/assets/033611a1-f7de-43b8-9010-bfd5f9ea357f" />
+---
 
 ## 🚀 Tecnologías Utilizadas
 
