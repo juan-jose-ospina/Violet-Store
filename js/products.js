@@ -1,8 +1,4 @@
-// ========================================
-// PRODUCTS.JS - Gestión de Productos
-// ========================================
 
-// Renderizar filtros
 function renderFilters() {
     const filterButtons = document.getElementById('filterButtons');
     const filters = ['Vegano', 'Cruelty-Free', 'Sin Químicos', 'Ingredientes Puros', 'Sin Sulfatos'];
@@ -11,7 +7,6 @@ function renderFilters() {
         <button class="filter-btn" data-filter="${filter}">${filter}</button>
     `).join('');
 
-    // Event listeners para filtros
     filterButtons.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const filter = btn.dataset.filter;
@@ -27,7 +22,6 @@ function renderFilters() {
     });
 }
 
-// Filtrar productos
 function getFilteredProducts() {
     return appState.products.filter(product => {
         // Filtro de búsqueda
@@ -43,7 +37,6 @@ function getFilteredProducts() {
     });
 }
 
-// Renderizar productos
 function renderProducts() {
     const productsGrid = document.getElementById('productsGrid');
     const filteredProducts = getFilteredProducts();
@@ -78,7 +71,6 @@ function renderProducts() {
     `).join('');
 }
 
-// Mostrar detalle de producto
 function showProductDetail(productId) {
     const product = appState.products.find(p => p.id === productId);
     if (!product) return;
@@ -127,7 +119,6 @@ function showProductDetail(productId) {
     modal.classList.add('active');
 }
 
-// Buscar productos
 function handleSearch(searchTerm) {
     appState.searchTerm = searchTerm;
     renderProducts();

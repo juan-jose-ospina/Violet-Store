@@ -1,6 +1,6 @@
 
 async function initApp() {
-    console.log('🚀 Iniciando VioletStore...');
+    console.log(' Iniciando VioletStore...');
     
     const dataLoaded = await loadData();
     
@@ -9,15 +9,15 @@ async function initApp() {
         return;
     }
 
-    renderFilters();   // Renderizara filtros de productos
-    renderProducts();  // Renderizara grilla de productos
-    renderBlog();      // Renderizara posts del blog
+    renderFilters();
+    renderProducts();
+    renderBlog();
     
     setupEventListeners();
 
-    updateCartBadge(); // Actualiza  el contador del carrito
+    updateCartBadge();
     
-    console.log('✅ VioletStore inicializado correctamente');
+    console.log(' VioletStore inicializado correctamente');
 }
 
 function setupEventListeners() {

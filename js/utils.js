@@ -1,10 +1,6 @@
-// ========================================
-// UTILS.JS - Funciones Utilitarias
-// ========================================
 
-// Mostrar notificación emergente
 function showNotification(message, type = 'success') {
-    // Crear elemento de notificación
+
     const notification = document.createElement('div');
     notification.style.cssText = `
         position: fixed;
@@ -29,7 +25,6 @@ function showNotification(message, type = 'success') {
     }, 3000);
 }
 
-// Agregar estilos de animación al DOM
 function addAnimationStyles() {
     const style = document.createElement('style');
     style.textContent = `
@@ -57,7 +52,6 @@ function addAnimationStyles() {
     document.head.appendChild(style);
 }
 
-// Formatear precio a moneda local
 function formatPrice(price) {
     return new Intl.NumberFormat('es-CO', {
         style: 'currency',
@@ -66,18 +60,15 @@ function formatPrice(price) {
     }).format(price);
 }
 
-// Validar email
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
-// Escapar HTML para prevenir XSS
 function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
 }
 
-// Inicializar estilos de animación cuando se carga el script
 addAnimationStyles();

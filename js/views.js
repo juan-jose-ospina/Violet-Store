@@ -1,12 +1,7 @@
-// ========================================
-// VIEWS.JS - Gestión de Cambio de Vistas
-// ========================================
 
-// Cambiar entre vistas de la aplicación
 function changeView(view) {
     appState.currentView = view;
-    
-    // Ocultar todas las secciones
+
     const sections = [
         'heroSection', 
         'searchSection', 
@@ -49,13 +44,11 @@ function changeView(view) {
             showHomeView();
     }
 
-    // Cerrar menú móvil
     const nav = document.getElementById('mainNav');
     if (nav) {
         nav.classList.remove('active');
     }
-    
-    // Scroll al inicio
+
     window.scrollTo(0, 0);
 }
 

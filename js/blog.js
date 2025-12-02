@@ -1,8 +1,4 @@
-// ========================================
-// BLOG.JS - Gestión del Blog y Asesoría
-// ========================================
 
-// Renderizar publicaciones del blog
 function renderBlog() {
     const blogGrid = document.getElementById('blogGrid');
     
@@ -29,7 +25,6 @@ function handleAdvisorSubmit(e) {
     
     if (message.trim()) {
         showNotification('¡Mensaje enviado! Un asesor se contactará contigo pronto.');
-        // Limpiar el textarea después de enviar
         document.getElementById('advisorMessage').value = '';
     } else {
         showNotification('Por favor escribe un mensaje', 'error');

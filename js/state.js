@@ -1,7 +1,3 @@
-// ========================================
-// STATE.JS - Estado Global de la Aplicación
-// ========================================
-
 // Estado global de la aplicación
 const appState = {
     products: [],
